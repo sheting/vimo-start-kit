@@ -29,6 +29,9 @@
                         <Button color="danger" block solid @click="$router.push({name:'components'})">
                             {{$t('index.component')}}
                         </Button>
+                        <Button color="info" block solid @click="$router.push({name:'practice'})">
+                            {{$t('index.practice')}}
+                        </Button>
                         <Button block solid @click="switchLanguage">
                             {{$t('index.switchLanguage')}}({{$i18n.locale.toUpperCase()}})
                         </Button>

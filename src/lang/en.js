@@ -17,6 +17,7 @@ export default {
     introduction: 'Introduction',
     message: 'Based on Vue2.x && A Platform For Hybrid App',
     component: 'Component',
-    switchLanguage: 'Switch Language'
+    switchLanguage: 'Switch Language',
+    practice: 'practice'
   }
 }

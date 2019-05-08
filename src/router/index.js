@@ -25,6 +25,11 @@ const router = new Router({
       component (resolve) {
         require(['@/pages/introduction.vue'], resolve)
       }
+    },
+    {
+      path: '/practice',
+      name: 'practice',
+      component: () => import('@/pages/practice')
     }
   ]
 })

@@ -17,6 +17,7 @@ export default {
     introduction: '简介',
     message: '基于Vue2.x的移动端Hybrid框架',
     component: '组件',
-    switchLanguage: '切换语言'
+    switchLanguage: '切换语言',
+    practice: '练习'
   }
 }
