@@ -18,6 +18,6 @@ export default {
     message: 'Based on Vue2.x && A Platform For Hybrid App',
     component: 'Component',
     switchLanguage: 'Switch Language',
-    practice: 'practice'
+    practice: 'stbj'
   }
 }

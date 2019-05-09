@@ -1,8 +1,8 @@
 <template lang="pug">
 Page
   Header
-    Navbar
-      Title 组件
+    Navbar(:hideBackButton="false")
+      Title(:title="$t('index.component')")
     Toolbar
       Segment(v-model="fruit")
         SegmentButton(value="apple") Apple

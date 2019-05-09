@@ -1,8 +1,8 @@
 <template lang="pug">
 Page
   Header
-    Navbar
-      Title 简介
+    Navbar(:hideBackButton="false")
+      Title(:title="$t('index.introduction')")
   Content.outer-content(padding)
     h5 简介
     p 这个项目是进行移动端H5开发的种子项目, 相关的初始化的配置已经搞定, 且在components页面中写了一些demo, 这个可以再实际项目中删减.
