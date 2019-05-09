@@ -1,30 +1,23 @@
-<template>
-    <Page>
-        <Header>
-            <Navbar>
-                <Title>组件</Title>
-            </Navbar>
-            <Toolbar>
-                <!--content-->
-                <Segment v-model="fruit">
-                    <SegmentButton value="apple">Apple</SegmentButton>
-                    <SegmentButton value="orange">Orange</SegmentButton>
-                    <SegmentButton value="pear">Pear</SegmentButton>
-                </Segment>
-            </Toolbar>
-        </Header>
-        <Content padding class="outer-content">
-            <p>当前页面展示组件调用示例:</p>
-            <hr>
-            <p>Segment选择值: {{fruit}}</p>
-            <p>城市选择器选择值: {{selectCity}}</p>
-            <Button block @click="showActionSheet()" color="primary">ActionSheet</Button>
-            <Button block @click="confirm()">Confirm</Button>
-            <Button block @click="chooseCity()">城市选择器</Button>
-            <Button block @click="showToast()">Toast</Button>
-            <Button block @click="loading()">Loading</Button>
-        </Content>
-    </Page>
+<template lang="pug">
+Page
+  Header
+    Navbar
+      Title 组件
+    Toolbar
+      Segment(v-model="fruit")
+        SegmentButton(value="apple") Apple
+        SegmentButton(value="orange") Orange
+        SegmentButton(value="pear") Pear
+  Content.outer-content(padding)
+    p 当前页面展示组件调用示例:
+    hr
+    p Segment选择值: {{fruit}}
+    p 城市选择器选择值: {{selectCity}}
+    Button(block, color="primary", @click="showActionSheet()") ActionSheet
+    Button(block @click="confirm()") Confirm
+    Button(block @click="chooseCity()") 城市选择器
+    Button(block @click="showToast()") Toast
+    Button(block @click="loading()") Loading
 </template>
 <script type="text/javascript">
   // 全局组件

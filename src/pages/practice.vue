@@ -1,7 +1,6 @@
-<template>
-    <Page>
-        practice
-    </Page>
+<template lang="pug">
+Page
+  | practice
 </template>
 <script type="text/javascript">
   export default{

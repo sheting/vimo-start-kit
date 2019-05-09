@@ -1,9 +1,7 @@
-<template>
-    <App>
-        <Nav>
-            <router-view></router-view>
-        </Nav>
-    </App>
+<template lang="pug">
+App
+  Nav
+    router-view
 </template>
 <script type="text/javascript">
   export default {
