@@ -2,7 +2,7 @@
 Page
   Header
     Navbar(:hideBackButton="false")
-      Title(:title="$t('index.component')")
+      Title(:title="$t('index.components')")
     Toolbar
       Segment(v-model="fruit")
         SegmentButton(value="apple") Apple

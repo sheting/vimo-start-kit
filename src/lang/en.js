@@ -16,8 +16,9 @@ export default {
     title: 'Welcome',
     introduction: 'Introduction',
     message: 'Based on Vue2.x && A Platform For Hybrid App',
-    component: 'Component',
+    components: 'Component',
     switchLanguage: 'Switch Language',
-    practice: 'stbj'
+    practice: 'stbj',
+    setting: 'setting'
   }
 }

@@ -30,6 +30,11 @@ const router = new Router({
       path: '/practice',
       name: 'practice',
       component: () => import('@/pages/practice')
+    },
+    {
+      path: '/setting',
+      name: 'setting',
+      component: () => import('@/pages/setting')
     }
   ]
 })

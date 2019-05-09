@@ -19,7 +19,7 @@
             Button(color="primary", block, solid, @click="$router.push({name:'introduction'})")
               | {{$t('index.introduction')}}
             Button(block, solid, @click="$router.push({name:'components'})")
-              | {{$t('index.component')}}
+              | {{$t('index.components')}}
             Button(block, solid, @click="$router.push({name:'practice'})")
               | {{$t('index.practice')}}
             Button(color="danger", block solid @click="switchLanguage")

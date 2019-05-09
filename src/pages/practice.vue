@@ -7,16 +7,20 @@ Page
     | content
   Footer
     Tabs(tabsLayout="icon-top", @onTabChange="onTabChange", ref="tabs")
-      Tab(:to="{name:'components'}", tabTitle="User", tabIcon="person")
-      Tab(:to="{name:'tabsBottom.demoTab2'}", tabTitle="Cars", tabIcon="car")
-      Tab(:to="{name:'tabsBottom.demoTab3'}", tabTitle="Star", tabIcon="star")
+      Tab(v-for="(tab, index) in tabs" :key="index" :to="{name: tab.name}", :tabTitle="tab.title", :tabIcon="tab.icon")
 </template>
 
 <script>
   export default {
     name: 'practice',
     data () {
-      return {}
+      return {
+        tabs: [
+          {name: 'components', title: this.$t('index.components'), icon: 'list'},
+          {name: 'introduction', title: this.$t('index.introduction'), icon: 'list'},
+          {name: 'setting', title: this.$t('index.setting'), icon: 'setting'}
+        ]
+      }
     },
     computed: {
       tabsComponent () {

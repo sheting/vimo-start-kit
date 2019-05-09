@@ -16,8 +16,9 @@ export default {
     title: '欢迎',
     introduction: '简介',
     message: '基于Vue2.x的移动端Hybrid框架',
-    component: '组件',
+    components: '组件',
     switchLanguage: '切换语言',
-    practice: '世通北京'
+    practice: '世通北京',
+    setting: '设置'
   }
 }
