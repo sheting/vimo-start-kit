@@ -1,10 +1,11 @@
 <template lang="pug">
 Page
   Header
-    Navbar(:hideBackButton="false")
+    Navbar
       Title(:title="$t('index.practice')")
   Content
     | content
+    Icon(ios="ios-home" md="md-home")
   Footer
     Tabs(tabsLayout="icon-top", @onTabChange="onTabChange", ref="tabs")
       Tab(v-for="(tab, index) in tabs" :key="index" :to="{name: tab.name}", :tabTitle="tab.title", :tabIcon="tab.icon")
@@ -16,7 +17,7 @@ Page
     data () {
       return {
         tabs: [
-          {name: 'components', title: this.$t('index.components'), icon: 'list'},
+          {name: 'index', title: this.$t('index.home'), icon: 'home'},
           {name: 'introduction', title: this.$t('index.introduction'), icon: 'list'},
           {name: 'setting', title: this.$t('index.setting'), icon: 'setting'}
         ]

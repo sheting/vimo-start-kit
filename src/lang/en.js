@@ -19,6 +19,7 @@ export default {
     components: 'Component',
     switchLanguage: 'Switch Language',
     practice: 'stbj',
-    setting: 'setting'
+    setting: 'setting',
+    home: 'home'
   }
 }

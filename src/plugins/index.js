@@ -13,7 +13,8 @@ import {
   Title,
   Toolbar,
   Tabs,
-  Tab
+  Tab,
+  Icon
 } from 'vimo'
 
 // 全局注册的组件(核心组件)
@@ -30,3 +31,4 @@ Vue.component(Buttons.name, Buttons)
 Vue.component(Title.name, Title)
 Vue.component(Tabs.name, Tabs)
 Vue.component(Tab.name, Tab)
+Vue.component(Icon.name, Icon)

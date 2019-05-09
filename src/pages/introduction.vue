@@ -1,7 +1,7 @@
 <template lang="pug">
 Page
   Header
-    Navbar(:hideBackButton="false")
+    Navbar
       Title(:title="$t('index.introduction')")
   Content.outer-content(padding)
     h5 简介

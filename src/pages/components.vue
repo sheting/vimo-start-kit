@@ -1,7 +1,7 @@
 <template lang="pug">
 Page
   Header
-    Navbar(:hideBackButton="false")
+    Navbar
       Title(:title="$t('index.components')")
     Toolbar
       Segment(v-model="fruit")

@@ -19,6 +19,7 @@ export default {
     components: '组件',
     switchLanguage: '切换语言',
     practice: '世通北京',
-    setting: '设置'
+    setting: '设置',
+    home: '首页'
   }
 }

@@ -1,7 +1,7 @@
 <template lang="pug">
   Page
     Header
-      Navbar(:hideBackButton="true")
+      Navbar(:hideBackButton="false")
         Title(:title="$t('index.title')")
     Content
       article.index.scrollContent
